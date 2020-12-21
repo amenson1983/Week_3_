@@ -1,4 +1,7 @@
-from ua.univer.lesson03.exception.data_verify import input_int_value
+import Classwork
+from Classwork import exception
+from Classwork.exception import *
+from Classwork.exception.data_verify import input_int_value
 
 
 def print_v1(matrix):

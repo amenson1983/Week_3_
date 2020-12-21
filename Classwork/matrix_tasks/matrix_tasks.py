@@ -13,7 +13,8 @@
 # назовем сумму ее положительных четных элементов.
 #    Переставляя строки заданной матрицы,
 # расположить их в соответствии с ростом характеристик.
-from matrix_test_data import *
+from matrix_test_data import get_matrix_with_negative_3x3, get_matrix_2x3, get_matrix_with_0_3x3
+
 
 def print_positive_elem(matrix):
     print("--------------------------")
@@ -24,6 +25,7 @@ def print_positive_elem(matrix):
             else:
                 print("-", end="\t")
         print()
+
 
 def get_count_row_without_zero(matrix):
     count_row_without_zero = 0
@@ -37,9 +39,17 @@ def get_count_row_without_zero(matrix):
             count_row_without_zero+=1
     return count_row_without_zero
 
-def get_count_collumn_with_zero():
-    # TODO реализовать функцию
-    pass
+
+def get_count_column_with_zero(matrix):
+    zero_count = 0
+    for item in matrix:
+        for j in item:
+            if j == 0:
+                zero_count += 1
+    return zero_count
+
+
+
 
 if __name__ == '__main__':
     m =[

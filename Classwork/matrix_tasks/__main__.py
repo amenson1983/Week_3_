@@ -1,8 +1,5 @@
-from ua.univer.lesson03.exception.data_verify import input_int_value
-from ua.univer.lesson03.matrix_tasks.matrix_helper import get_matrix_from_console, print_v1
-from ua.univer.lesson03.matrix_tasks.matrix_tasks import print_positive_elem
-from ua.univer.lesson03.matrix_tasks.matrix_test_data import get_matrix_2x3
-
+from Classwork.matrix_tasks.matrix_helper import get_matrix_from_console
+from Classwork.matrix_tasks.matrix_tasks import print_positive_elem
 
 if __name__ == '__main__':
     matrix = None
