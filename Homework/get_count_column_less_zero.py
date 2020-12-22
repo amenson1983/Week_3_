@@ -3,7 +3,6 @@ from Classwork.matrix_tasks.matrix_test_data import get_matrix_with_negative_3x3
 
 
 matrix = get_matrix_with_negative_3x3()
-negative_list_copy = []
 negative_list_uniq = []
 negative_indicate = False
 negative_count = 0
@@ -15,5 +14,11 @@ for item in matrix:
             negative_list.append(matrix.index(item))
             negative_count +=1
         else: negative_indicate = False
+ind = 0
+for item in negative_list:
+    if ind >item:
+        print("")
+    else: negative_list_uniq.append(item)
+    ind += 1
 
-print ("Количество отрицательных элементов: ", negative_count, "\nПозиции строк: ", negative_list)
+print ("Количество отрицательных элементов: ", negative_count, "\nПозиции строк: ", negative_list_uniq)
