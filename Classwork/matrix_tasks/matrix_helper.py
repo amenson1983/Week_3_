@@ -28,3 +28,27 @@ def get_matrix_from_console():
             print("Enter matrix[", i,"][",j,"]=")
             matrix[i].append(input_int_value())
     return matrix
+
+def summarize_elements(matrix):
+    sum_1 = 0
+    for i in matrix:
+        sum_1 += i
+    return sum_1
+
+def return_positive_elem(matrix):
+    list__ = []
+    for row in matrix:
+        if row >= 0:
+           list__.append(row)
+        else:
+            print("")
+    return list__
+
+def return_even_elem(matrix):
+    list__ = []
+    for item in matrix:
+        x = item%2
+        if x == 0:
+            list__.append(item)
+        else: print("")
+    return list__
