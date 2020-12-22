@@ -7,8 +7,8 @@ def get_matrix_2x3():
 
 def get_matrix_with_0_3x3():
     return [
-        [1, 0, 3],
-        [0, 5, 6],
+        [1, 3, 3],
+        [5, 5, 5],
         [4, 5, 0]
     ]
 
