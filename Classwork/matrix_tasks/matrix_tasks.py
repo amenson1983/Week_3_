@@ -49,6 +49,14 @@ def get_count_column_with_zero(matrix):
     return zero_count
 
 
+def get_count_column_less_zero(matrix):
+    negative_count = 0
+    for item in matrix:
+        for j in item:
+            if j < 0:
+                negative_count += 1
+    return negative_count
+
 
 
 if __name__ == '__main__':
