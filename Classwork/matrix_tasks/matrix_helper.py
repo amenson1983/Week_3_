@@ -4,6 +4,7 @@ from Classwork.exception import *
 from Classwork.exception.data_verify import input_int_value
 
 
+
 def print_v1(matrix):
     for irow in matrix:
         for ijcol in irow:
@@ -52,3 +53,4 @@ def return_even_elem(matrix):
             list__.append(item)
         else: print("")
     return list__
+

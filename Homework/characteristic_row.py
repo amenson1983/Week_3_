@@ -24,9 +24,12 @@ ch_1 = summarize_elements(ch_1)
 ch_2 = summarize_elements(ch_2)
 ch_3 = summarize_elements(ch_3)
 new_list = [ch_1,ch_2,ch_3]
+
 def sorting(matrix):
     new_list.sort()
     return new_list
+
+
 new_list = sorting(new_list)
 
 if new_list.index(ch_1) == 0:
