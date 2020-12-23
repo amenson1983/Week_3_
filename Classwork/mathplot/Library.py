@@ -58,3 +58,21 @@ def linear_diagram(x_coord, y_coord):
     plt.grid(True)
     plt.show()
 
+def bar_diagram(x_coord, y_coord):
+        bar_diagram(x_coord, y_coord)
+
+
+def bar_diagram(x_coord, y_coord):
+    x_min = min(x_coord)
+    x_max = max(x_coord)
+    y_min = min(y_coord)
+    y_max = max(y_coord)
+    bar_wight = float(input("Введите ширину столбика диаграммы: "))
+    plt.bar(x_coord, y_coord, bar_wight, color='g')
+    plt.title(input("Введите заголовок диаграммы: "))
+    plt.xlabel(input("Введите подпись по оси ОХ: "))
+    plt.ylabel(input("Введите подпись по оси ОY: "))
+    plt.xlim(xmin=x_min - (x_min/2), xmax=x_max + (x_max/2))
+    plt.ylim(ymin=y_min - (y_min/2), ymax=y_max + (y_max/2))
+    plt.grid(True)
+    plt.show()
