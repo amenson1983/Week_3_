@@ -76,3 +76,21 @@ def bar_diagram(x_coord, y_coord):
     plt.ylim(ymin=y_min - (y_min/2), ymax=y_max + (y_max/2))
     plt.grid(True)
     plt.show()
+
+def weekdays_sales_input():
+    return weekdays_sales_input()
+
+
+def weekdays_sales_input():
+    counter_y = 0
+    index = 0
+    gross_sales = 0
+    daily_sales = [[], [], [], [], [], [], []]
+    while counter_y < 7:
+        for value in daily_sales:
+            i = float(input("Введите продажи за день"))
+            counter_y += 1
+            daily_sales[index] = i
+            index += 1
+            gross_sales += i
+    return daily_sales, gross_sales
