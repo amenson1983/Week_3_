@@ -24,3 +24,11 @@ def input_float_value():
         except:
             print("Not float, try again")
     return value
+
+def input_positive(mark):
+    while True:
+
+        if 1 < mark:
+            return mark
+        else:
+            print("Value not mark, try again")
