@@ -122,3 +122,35 @@ def min_in_list(list):
         if i >max_:
             max_ = i
     return min_, max_
+
+def float_values_manual_input_():
+    counter_y = 0
+    index = 0
+    quantity_of_points = 12 #int(input("Введите количество значений: "))
+    y_coord = [0]
+    y_coord = y_coord * quantity_of_points
+    sum = 0
+    while counter_y < quantity_of_points:
+        for value in y_coord:
+            i = float(input("Введите значения списка: "))
+            counter_y += 1
+            y_coord[index] = i
+            index += 1
+            sum +=i
+    return y_coord,sum
+
+def int_values_manual_input_():
+    counter_y = 0
+    index = 0
+    quantity_of_points = 6 #int(input("Введите количество значений: "))
+    y_coord = [0]
+    y_coord = y_coord * quantity_of_points
+    sum = 0
+    while counter_y < quantity_of_points:
+        for value in y_coord:
+            i = int(input("Введите значения списка: "))
+            counter_y += 1
+            y_coord[index] = i
+            index += 1
+            sum +=i
+    return y_coord,sum
