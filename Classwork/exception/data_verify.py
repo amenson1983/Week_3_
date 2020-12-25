@@ -9,9 +9,9 @@ def input_int_value():
 
 def input_mark():
     while True:
-        print("enter mark (2<mark<=12)")
+        print("enter mark (1<mark<=9)")
         mark = input_int_value()
-        if 2 < mark <= 12:
+        if 1 < mark <= 9:
             return mark
         else:
             print("Value not mark, try again")

@@ -154,3 +154,14 @@ def int_values_manual_input_():
             index += 1
             sum +=i
     return y_coord,sum
+
+def create_matrix():
+    rows = 3
+    col = 3
+    list = [[0, 0, 0],
+            [0, 0, 0],
+            [0, 0, 0]]
+    for i in range(rows):
+        for j in range(col):
+            list[i][j] = random.randint(0, 9)
+    return list
