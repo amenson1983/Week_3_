@@ -4,4 +4,5 @@ import random
 
 x_coord = OX_values_input_manual()
 y_coord = OY_values_manual_input()
+
 bar_diagram(x_coord, y_coord)

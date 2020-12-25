@@ -15,3 +15,12 @@ def input_mark():
             return mark
         else:
             print("Value not mark, try again")
+
+def input_float_value():
+    while True:
+        try:
+            value = float(input("Enter float value"))
+            break
+        except:
+            print("Not float, try again")
+    return value
